@@ -16,7 +16,7 @@ publish:
 	cd public; \
 	ls -al; \
 	git init; \
-	git remote add origin git@github.com:jontk/brokkr.io; \
+	git remote add origin git@github.com:jontk/jontk.com; \
 	git checkout -b gh-pages; \
 	git add --all; \
 	git commit -m "GitHub Pages Upload"; \
