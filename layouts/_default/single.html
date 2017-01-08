@@ -1,15 +1,19 @@
+
+
 {{ define "title" }}{{ .Title }} - {{ end }}
 
 {{ define "main" }}
 <div class="row">
-  <div class="column small-12">
-  {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
-
-  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  
-  {{ .Content }}
-
-
+  <br>
+  <div class="column small-10 large-8 large-centered small-centered text-center">
+      <h5><small><time datetime="{{ $.Date }}" itemprop="datePublished">{{ $.Date.Format (default "2 January 2006" (index $.Site.Params "date_format")) }}</time></small></h5>
+      <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+      <h4 class="subheader">Such a Simple Blog Layout</h2>
+  </div>
+  <div class="column small-10 large-8 small-centered large-centered">
+    <div class="blog-post">
+      {{ .Content }}
+    </div>
   </div>
 </div>
 {{ end }}

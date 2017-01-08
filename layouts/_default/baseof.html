@@ -11,21 +11,23 @@
   </head>
   <body>
 
-
     <div class="off-canvas-wrapper">
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
         <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
-          <div class="row column">
+          <div class="row">
+            <div class="column align-left">
+              <br>
+              <h2 class="text-center">jontk</h2>
+              <h5 class="text-center"><small>The site of developer,<br> Jon Thor Kristinsson.</small></h5>
+              <ul class="vertical menu">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                  <li><a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+            </div>
             <br>
-            <h5>Jon Thor Kristinsson</h5>
-            <p>Developer intrested in operation automation</p>
-            <ul class="vertical menu">
-              {{ $currentPage := . }}
-              {{ range .Site.Menus.main }}
-                <li><a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a></li>
-              {{ end }}
-            </ul>
           </div>
         </div>
 
@@ -33,13 +35,13 @@
           <div class="title-bar hide-for-large">
             <div class="title-bar-left">
               <button class="menu-icon" type="button" data-open="my-info"></button>
-              <span class="title-bar-title">Jon Thor Kristinsson</span>
+              <span class="title-bar-title">jontk</span>
             </div>
           </div>
 
-          <div class="container">
-            {{ block "main" . }}
-            {{ end }}
+          <div class="row small-up-2 medium-up-3 large-up-4">
+              {{ block "main" . }}
+              {{ end }}
           </div>
 
         </div>
@@ -51,7 +53,6 @@
     <script>
       $(document).foundation();
     </script>
-
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>

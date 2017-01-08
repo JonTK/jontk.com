@@ -1,6 +1,7 @@
 {{ define "main" }}
 <div class="row">
-  <div class="column small-12">
+  <br>
+  <div class="column small-10 large-8 large-centered small-centered">
     {{ $paginator := .Paginate .Data.Pages }}
     {{ range $paginator.Pages }}
     {{ partial "post-summary" . }}
