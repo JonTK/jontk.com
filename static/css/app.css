@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Ropa Sans Italic';
-    src: url(http://localhost:1313/fonts/RopaSans-Italic.ttf);
+    src: url(/fonts/RopaSans-Italic.ttf);
     font-weight: 400;
 }
 

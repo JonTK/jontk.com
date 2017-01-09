@@ -1,9 +1,7 @@
 +++
 draft = false
 date = "2017-01-05T21:41:22Z"
-title = "Home"
+title = "Blog"
 menu = "main"
-weight = -120
+weight = -100
 +++
-
-Testing home text.
