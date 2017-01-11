@@ -10,13 +10,22 @@
     font-weight: 400;
 }
 
-div#my-info {
+div#my-top-bar {
   background-color: #2053ab;
   color: #ffffff;
 }
 
-div#my-info a {
-  color: #ffffff;
+div#my-top-bar ul {
+  background-color: #2053ab;
+}
+
+div#my-top-bar a {
+  background-color: transparent;
+  color: #09c;
+}
+
+div#my-top-bar a.active {
+  color: #fff;
 }
 
 .title-bar {

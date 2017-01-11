@@ -11,41 +11,22 @@
   </head>
   <body>
 
-    <div class="off-canvas-wrapper">
-      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-
-        <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
-          <div class="row">
-            <div class="column align-left">
-              <br>
-              <h2 class="text-center">jontk</h2>
-              <h5 class="text-center"><small>The site of developer,<br> Jon Thor Kristinsson.</small></h5>
-              <ul class="vertical menu">
-                {{ $currentPage := . }}
-                {{ range .Site.Menus.main }}
-                  <li><a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a></li>
-                {{ end }}
-              </ul>
-            </div>
-            <br>
-          </div>
-        </div>
-
-        <div class="off-canvas-content" data-off-canvas-content>
-          <div class="title-bar hide-for-large">
-            <div class="title-bar-left">
-              <button class="menu-icon" type="button" data-open="my-info"></button>
-              <span class="title-bar-title">jontk</span>
-            </div>
-          </div>
-
-          <div class="row small-up-2 medium-up-3 large-up-4">
-              {{ block "main" . }}
-              {{ end }}
-          </div>
-
-        </div>
+    <!-- Start Top Bar -->
+    <div class="top-bar" id="my-top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+            <li><a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} menu-text active{{end}}" href="{{.URL}}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
       </div>
+    </div>
+    <!-- End Top Bar -->
+
+    <div class="row small-up-2 medium-up-3 large-up-4">
+        {{ block "main" . }}
+        {{ end }}
     </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
