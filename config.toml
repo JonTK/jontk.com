@@ -1,6 +1,8 @@
 languageCode = "en-us"
 title = "JonTK"
 baseurl = "https://www.jontk.com/"
+googleAnalytics = ""
+disqusShortname = "XYW"
 
 [params]
   custom_css = ["css/foundation.css", "css/site.css", "css/app.css"]

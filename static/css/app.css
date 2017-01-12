@@ -20,8 +20,10 @@ div#my-top-bar ul {
 }
 
 div#my-top-bar a {
+  font-family: 'Ropa Sans', Raleway, "Open Sans", Arial, sans-serif;
+  text-transform: uppercase;
   background-color: transparent;
-  color: #09c;
+  color: #fff;
 }
 
 div#my-top-bar a.active {
