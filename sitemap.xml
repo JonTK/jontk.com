@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://www.jontk.com/</loc>
+    <lastmod>2017-01-05T21:41:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jontk.com/about/</loc>
+    <lastmod>2017-01-06T20:58:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jontk.com/blog/</loc>
+    <lastmod>2017-01-05T21:41:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jontk.com/projects/</loc>
+    <lastmod>2017-01-05T21:41:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jontk.com/projects/first-project/</loc>
+    <lastmod>2017-01-05T21:41:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jontk.com/blog/first-blog/</loc>
+    <lastmod>2017-01-05T19:48:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jontk.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jontk.com/categories/development/</loc>
+    <lastmod>2017-01-05T19:48:10+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jontk.com/tags/golang/</loc>
+    <lastmod>2017-01-05T21:41:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jontk.com/categories/open-source/</loc>
+    <lastmod>2017-01-05T21:41:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jontk.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
