@@ -8,16 +8,21 @@ help:
 server:
 	hugo server --buildDrafts
 
+prepare:
+	if [ ! -d "public" ]; \
+	then \
+		git clone git@github.com:jontk/jontk.com --branch gh-pages public; \
+	fi;
+
 build:
 	rm -rf public
 	hugo -d public
 
 publish:
+	make prepare
+	rm -rf public/*
+	hugo -d public
 	cd public; \
-	ls -al; \
-	git init; \
-	git remote add origin git@github.com:jontk/jontk.com; \
-	git checkout -b gh-pages; \
 	git add --all; \
-	git commit -m "GitHub Pages Upload"; \
-	git push -f origin gh-pages;
+	git commit -m "Released at $(shell date +'%Y.%m.%d %H:%M:%S')"; \
+	git push;
