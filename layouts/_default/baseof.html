@@ -30,15 +30,14 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    {{ range .Site.Params.custom_js }}
+        <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+    {{ end }}
+
     <script>
       $(document).foundation();
     </script>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
     {{ template "_internal/google_analytics.html" . }}
   </body>
 </html>
